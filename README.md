@@ -20,15 +20,25 @@ A clean and modern Django starter setup with an optimized development workflow.
 
 ```
 project/
-├── base/                  # Main app
-│   ├── templates/
-│   │   └── base/
-│   │       ├── base.html
-│   │       └── index.html
-│   ├── templatetags/
-│   └── views.py
-├── project/               # Django config
+├── base/
+│   ├── settings/
+│      └── __init__.py
+│      └── authentication.py
+│      └── base.py
+│      └── configuration.py
+│      └── development.py
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── urls.py
+│   ├── wsgi.py
+├── templates/
+│   ├── base/
+│      └── base.html
+│   ├── index.html
+├── .djlintrc               # Django config
 ├── manage.py
+├── requirements.txt
+├── README.md
 ```
 
 ---
